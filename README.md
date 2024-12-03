@@ -1,4 +1,11 @@
+
+# Current Project Status
+![Build Status](https://img.shields.io/github/actions/workflow/status/ionthedev/ClassificationAssignment/test.yml) ![Language](https://img.shields.io/github/languages/top/ionthedev/ClassificationAssignment) ![GitHub License](https://img.shields.io/github/license/ionthedev/ClassificationAssignment)
+
+
 # Project Explanation
+
+
 
 ---
 
