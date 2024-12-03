@@ -1,5 +1,4 @@
 @echo off
-mkdir models
 mkdir data
 mkdir results
 python -m venv venv

@@ -3,7 +3,6 @@ from src.data_loader import CIFAR10DataLoader
 from src.model import SimpleCNN
 from src.train import train_model
 from src.utils import plot_training_curves, plot_confusion_matrix
-import numpy as np
 
 # 			WHAT DOES THIS DO !?
 # 			---------------------

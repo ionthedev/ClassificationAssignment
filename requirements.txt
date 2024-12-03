@@ -1,12 +1,6 @@
 torch
 torchvision
-numpy
 matplotlib
 seaborn
 scikit-learn
-pandas
-pylint
-black
-mypy
-pyright
 tqdm
