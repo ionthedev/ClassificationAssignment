@@ -1,30 +1,7 @@
-# Project Structure
-```
-.
-├── data Where all of the model data goes
-├── LICENSE
-├── main.py
-├── models
-├── requirements.txt
-├── results
-├── run.bat
-├── run.sh
-└── src
-    ├── data_loader.py
-    ├── model.py
-    ├── train.py
-    └── utils.py
-```
-
-
-# Setup
-Windows: run `run.bat`
-Linux: run `chmod +x ./run.sh` and then run `./run.sh`
-
-This will setup the necessary project structure, python environment and runs the main.py script to trigger everything.
-Onces it's done, the results get created in ./results
-
 # Project Explanation
+
+---
+
 ## Overview
 This is a Convolutional Neural Network project that uses the CIFAR-10 dataset to classify images into 10 categories.
 
@@ -36,6 +13,10 @@ This is a Convolutional Neural Network project that uses the CIFAR-10 dataset to
 - `train.py` - manages the training process across all cycles (epochs)
 - `utils.py` - utility functions to creat visualizations of the training progress and performance of the CNN.
 - `main.py`  - gets everything, ties it together in a nice bow and runs everything.
+
+
+---
+
 
 ## Execution Flow
 ```mermaid
@@ -63,13 +44,56 @@ flowchart TD
 ```
 The model runs on GPU if available but will fallback to CPU if one isn't found.
 
+
+---
+
+
 ## Library Stack
 PyTorch - Used for deep learning operations.
 matplotlib and seaborn - Used for visualization.
 Scikit-learn - Used to calculate how dumb everything is
 tqdm - Used for progress bars.
 
-Nvidia specifications used for developing this Repository
+---
+
+
+## Setup
+Windows: run `run.bat`
+Linux: run `chmod +x ./run.sh` and then run `./run.sh`
+
+This will setup the necessary project structure, python environment and runs the main.py script to trigger everything.
+Onces it's done, the results get created in ./results
+
+---
+
+## Project Structure
+```
+.
+├── data Where all of the model data goes
+├── LICENSE
+├── main.py
+├── requirements.txt
+├── results
+├── run.bat
+├── run.sh
+└── src
+    ├── data_loader.py
+    ├── model.py
+    ├── train.py
+    └── utils.py
+```
+
+
+
+
+# **Current System Specs**
+- OS: Zorin  OS 17.2
+- CPU: Intel i9-11900KB (16) @ 5.000GHz
+- GPUs
+		Integrated GPU: Intel TigerLake-H GT1 [UHD Graphics]
+		PCI GPU: NVIDIA RTX A4000
+- Memory: 64.0 GiB
+nvidia-smi output 
 ``` sql
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.120                Driver Version: 550.120        CUDA Version: 12.4     |
@@ -83,11 +107,3 @@ Nvidia specifications used for developing this Repository
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 ```
-
-# Current System Specs
-- OS: Zorin  OS 17.2
-- CPU: Intel i9-11900KB (16) @ 5.000GHz
-- GPUs
-		Integrated GPU: Intel TigerLake-H GT1 [UHD Graphics]
-		PCI GPU: NVIDIA RTX A4000
-- Memory: 64.0 GiB
